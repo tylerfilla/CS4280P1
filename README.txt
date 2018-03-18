@@ -1,4 +1,6 @@
 3
+scanner_table.gen.h
+p1::scanner::next_token()
 
 Tyler Filla
 CS 4280
@@ -20,9 +22,12 @@ the primary driver, though it calls upon sibling member functions for small
 tasks (such as mapping the input alphabet to a smaller domain than the entirety
 of ASCII, which helps keep the table small).
 
-tl;dr
-The table is in scanner_table.gen.h. The driver is next_token() in the scanner
-class template in scanner.h.
+There are no complementary *.cpp files for the *.h files, as templates are
+involved. The size of the scanner class, for instance, cannot be known without
+knowing the size of the input iterator type. Similarly, a scanner object cannot
+be used in the scanner_tester class without knowing its full type. Some small
+functions could be broken out into *.cpp files, but I don't see a practical
+reason to do so.
 
 Building
 ========
