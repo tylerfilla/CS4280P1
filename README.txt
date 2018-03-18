@@ -37,4 +37,3 @@ $ make
 
 To regenerate the FSA table:
 $ make tablegen
-./tablegen table.txt
