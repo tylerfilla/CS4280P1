@@ -28,9 +28,9 @@
 #  - DIGITS: all allowed digits
 #  - LETTERS: all allowed letters, both uppercase and lowercase
 #  - WS: all allowed whitespace
-#  - SYMBOLS: all allowed symbols
-#  - OTHERLETTERS: all letters not explicitly assigned
-#  - OTHERS: all characters not explicitly assigned
+#  - SYMBOLS: all allowed symbols not explicitly assigned beforehand
+#  - OTHERLETTERS: all letters not explicitly assigned beforehand
+#  - OTHERS: all characters not explicitly assigned beforehand
 #
 # * Since EOF can happen anywhere, I simplified the file a bit by factoring out
 # the corresponding token. That's why it needs to be named somewhere, and I
