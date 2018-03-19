@@ -29,11 +29,14 @@ be used in the scanner_tester class without knowing its full type. Some small
 functions could be broken out into *.cpp files, but I don't see a practical
 reason to do so.
 
+Also, I chose to implement comments in the table. This was a simple addition
+using tablegen, and it feels more consistent.
+
 Building
 ========
 
 Run the following command to build everything:
 $ make
 
-To regenerate the FSA table:
+To regenerate the FSA table alone:
 $ make tablegen
